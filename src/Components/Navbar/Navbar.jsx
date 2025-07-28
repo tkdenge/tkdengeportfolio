@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import './NavBar.css'
+import './Navbar.css'
 import {Menu, X} from 'lucide-react'
 
 import AnchorLink from 'react-anchor-link-smooth-scroll'
