@@ -1,0 +1,69 @@
+.hero{
+  /* background: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:10px;
+  padding: 40px;
+}
+
+.hero img{
+  border-radius: 50%;
+  width: 200px;
+  box-shadow: 1px 0 10px 0 black;
+}
+
+.hero h1{
+  text-align: center;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.hero h1 span{
+  color: rgb(208, 123, 32);
+  font-size: 1.7rem;
+}
+
+.hero p{
+  width: 55%;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 20px;
+  width: 100%;
+}
+
+.hero-action{
+  display: flex;
+  align-items: center;
+  gap:25px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.hero-connect{
+  padding: 8px 20px;
+  border-radius: 15px;
+  background: rgb(207, 108, 3);
+  border: 1px solid rgb(207, 108, 3);
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.hero-resume{
+  padding: 8px 20px;
+  border-radius: 15px;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.hero-connect:hover {
+  border-color: white;
+  transform: scale(1.05);
+}
+
+.hero-resume:hover {
+  border-color: rgb(76, 76, 215);
+  transform: scale(1.05);
+}
