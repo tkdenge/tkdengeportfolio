@@ -1,7 +1,6 @@
-import { BiLogoCPlusPlus, BiLogoDjango } from "react-icons/bi";
-import { DiHtml5, DiCss3, DiJavascript, DiReact, DiGit, DiGithub, DiVisualstudio, DiResponsive, DiChrome, DiDjango, DiJavascript1 } from "react-icons/di";
-import { SiDjango, SiVite } from "react-icons/si";
-import { TbBrandDjango } from "react-icons/tb";
+import { BiLogoCPlusPlus } from "react-icons/bi";
+import { DiHtml5, DiCss3, DiReact, DiGit, DiGithub, DiVisualstudio, DiResponsive, DiChrome, DiJavascript1, DiPython, DiMysql, DiNodejs } from "react-icons/di";
+import { SiVite } from "react-icons/si";
 
 const Skills_Data = [
     { 
@@ -59,10 +58,21 @@ const Skills_Data = [
         name: "C++",
         icon: BiLogoCPlusPlus,
     },
+    
     { 
         id: 12, 
-        name: "Django",
-        icon: BiLogoDjango,
+        name: "Python",
+        icon: DiPython,
+    },
+    { 
+        id: 13, 
+        name: "Node JS",
+        icon: DiNodejs,
+    },
+    { 
+        id: 14, 
+        name: "MySQL",
+        icon: DiMysql,
     },
 ]
 

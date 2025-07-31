@@ -8,28 +8,31 @@ import toast from 'react-hot-toast'
 
 const Contact = () => {
 
+  const [result, setResult] = React.useState("");
+
   const onSubmit = async (event) => {
     event.preventDefault();
+    setResult("Sending....");
+
     const formData = new FormData(event.target);
 
     formData.append("access_key", "7c3ca76b-8faf-4781-9fa6-14e6d68700f3");
 
-    const object = Object.fromEntries(formData);
-    const json = JSON.stringify(object);
-
-    const res = await fetch("https://api.web3forms.com/submit", {
+    const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json"
-      },
-      body: json
-    }).then((res) => res.json());
+      body: formData
+    });
 
-    if (res.success) {
-      console.log("Success", res);
-      // alert(res.message)
-      toast.success(res.message)
+    const data = await response.json();
+
+    if (data.success) {
+      setResult(data.message);
+      toast.success(result)
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+      toast.error(result);
     }
   };
 
@@ -39,6 +42,7 @@ const Contact = () => {
         <div className="contact-title">
           <h1>Get in touch</h1>
         </div>
+
         <div className="contact-section">
           <div className="contact-left">
             <h1>Let's talk</h1>
@@ -55,13 +59,14 @@ const Contact = () => {
               </div>
             </div>
           </div>
+
           <form onSubmit={onSubmit} className="contact-right">
             <label htmlFor="">Your name <span>*</span></label>
             <input type="text" placeholder='Enter your name' name='name' required/>
             <label htmlFor="">Your email <span>*</span></label>
-            <input type="text" placeholder='Enter your email' name='email' required/>
+            <input type="email" placeholder='Enter your email' name='email' required/>
             <label htmlFor="">Write your message here <span>*</span></label>
-            <textarea name="message" rows='8'placeholder='Enter your message'required></textarea>
+            <textarea name="message" rows='8' maxlength="500" placeholder='Enter your message'required></textarea>
             <button className="contact-submit">Submit now</button>
           </form>
         </div>

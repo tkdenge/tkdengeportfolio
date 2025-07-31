@@ -1,8 +1,8 @@
 .contact{
-  /* background: purple; */
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap:25px;
   padding: 40px;
 }
@@ -19,6 +19,7 @@
   flex-direction: column;
   align-items: center;
   gap: 50px;
+  padding: 0 20px;
 }
 
 .contact-left{
@@ -56,7 +57,7 @@
   flex-direction: column;
   align-items: start;
   gap: 15px;
-  margin-left: -40px;
+  width: 100%;
 }
 
 .contact-right label{
@@ -73,10 +74,10 @@
   font-family: 'ubuntu',sans-serif;
   font-size: 1rem;
   color: white;
+  box-sizing: border-box;
 }
 
 .contact-right textarea{
-  width: 100%;
   border: none;
   padding: 20px 20px;
   border-radius: 4px;
@@ -84,6 +85,8 @@
   font-family: 'ubuntu',sans-serif;
   font-size: 1rem;
   color: white;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .contact-submit{
@@ -96,6 +99,7 @@
   font-weight: bold;
   transition: 0.5s ease;
   padding: 8px 20px;
+  margin-left: auto
 }
 
 .contact-submit:hover{

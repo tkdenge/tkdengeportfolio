@@ -11,7 +11,7 @@ const Hero = () => {
 
         <h1><span>I'm Thanyani Katleho Denge</span> an aspiring front-end developer  </h1>
 
-        <p>I design and code beautifully simple things and I love what I do.</p>
+        <p>I create and code elegant, minimal designs, and I truly enjoy the process.</p>
 
         <div className="hero-action">
           <div className="hero-connect"><AnchorLink className='anchor-link' href="#contact">Contact me!</AnchorLink></div>
