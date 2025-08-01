@@ -1,6 +1,9 @@
 import React from 'react'
 import './Footer.css'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import { DiGithubBadge } from 'react-icons/di'
+import { FaLinkedin } from 'react-icons/fa'
+import { FiMail } from 'react-icons/fi'
 
 const Footer = () => {
   return (
@@ -23,6 +26,32 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <div className="footer-bottom-left">
+            <div className="footer-social-links">
+              <a 
+                href="https://github.com/tkdenge/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="Github"
+              >
+                <DiGithubBadge className='github' size={35} color="#9b9ea0ff" />
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/tkdenge/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <FaLinkedin size={35} color="#9b9ea0ff" />
+              </a>
+              <a 
+                href="mailto:tkdenge3@gmail.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="Mail"
+              >
+                <FiMail size={35} color="#9b9ea0ff" />
+              </a>
+            </div>
             <p>© 2025 Thanyani Katleho Denge.</p>
           </div>
           

@@ -1,5 +1,5 @@
 import { BiLogoCPlusPlus } from "react-icons/bi";
-import { DiHtml5, DiCss3, DiReact, DiGit, DiGithub, DiVisualstudio, DiResponsive, DiChrome, DiJavascript1, DiPython, DiMysql, DiNodejs } from "react-icons/di";
+import { DiHtml5, DiCss3, DiReact, DiGit, DiVisualstudio, DiResponsive, DiChrome, DiJavascript1, DiPython, DiMysql, DiNodejs, DiGithubBadge } from "react-icons/di";
 import { SiVite } from "react-icons/si";
 
 const Skills_Data = [
@@ -36,7 +36,7 @@ const Skills_Data = [
     { 
         id: 7, 
         name: "GitHub",
-        icon: DiGithub,
+        icon: DiGithubBadge,
     },
     { 
         id: 8, 

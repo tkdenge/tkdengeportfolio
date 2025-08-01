@@ -15,7 +15,13 @@ const Hero = () => {
 
         <div className="hero-action">
           <div className="hero-connect"><AnchorLink className='anchor-link' href="#contact">Contact me!</AnchorLink></div>
-          <div className="hero-resume">Resume</div>
+          <div className="hero-resume">
+            <a 
+              href="/src/assets/CV TK.docx.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >Resume</a>
+            </div>
         </div>
       </div>
     </>

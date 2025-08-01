@@ -9,6 +9,7 @@
 }
 
 .footer-top{
+  padding-left: 100px;
   width: 100%;
 }
 
@@ -73,12 +74,13 @@
   font-size: .7rem;
   /* gap: 40px; */
   width: 100%;
+  padding-left: 100px;
 }
 
 .footer-bottom-right{
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
   width: 45%;
 }
 
@@ -86,7 +88,15 @@
   text-decoration: none;
 }
 
+.footer-social-links{
+  display: flex;
+  gap: 20px;
+}
+
 .footer-bottom-left{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   width: 45%;
 }
 
@@ -108,4 +118,9 @@
   border-radius: 1.5px;
   background: rgb(207, 108, 3);
   width: 100%;
+}
+
+.github{
+  cursor: pointer;
+  transition: 0.5s ease;
 }
