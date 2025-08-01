@@ -4,6 +4,9 @@
   align-items: center;
   gap:10px;
   padding: 40px 27px;
+  /* background: url('/src/assets/bg_img.jpg');
+  background-size: cover;
+  background-position: center; */
 }
 
 .hero img{
@@ -54,6 +57,7 @@
   border: 1px solid white;
   cursor: pointer;
   transition: 0.5s ease;
+  border-color: rgb(255, 255, 255);
 }
 
 .hero-resume a{
