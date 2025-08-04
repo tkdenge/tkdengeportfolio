@@ -60,7 +60,7 @@ const NavBar = () => {
           </li>
           
           <li>
-            <a href="/CV_TK.pdf" download="CV-TK DENGE.pdf">
+            <a href="/CV_TK_DENGE.pdf" download="CV-TK DENGE.pdf">
               <button className='nav-cv-btn'>Download CV</button>
             </a>
           </li>
