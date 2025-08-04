@@ -14,7 +14,8 @@ const Hero = () => {
         <p>I create and code elegant, minimal designs, and I truly enjoy the process.</p>
 
         <div className="hero-action">
-          <div className="hero-connect"><AnchorLink className='anchor-link' href="#contact">Contact me!</AnchorLink></div>
+          <div className="hero-connect">
+            <AnchorLink className='anchor-link' href="#contact" offset='80'>Contact me!</AnchorLink></div>
           <div className="hero-resume">
             <a 
               href="/CV_TK_DENGE.pdf" 

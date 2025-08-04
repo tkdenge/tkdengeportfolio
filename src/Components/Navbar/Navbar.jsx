@@ -29,7 +29,7 @@ const NavBar = () => {
 
         <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
           <li>
-            <a href="">
+            <a href="" onClick={toggleMenu}>
               <AnchorLink className='anchor-link' offset='80' href="#home">
                 <p onClick={()=>setMenu('home')}>Home</p>
               </AnchorLink>
@@ -37,7 +37,7 @@ const NavBar = () => {
           </li>
 
           <li>
-            <a href="">
+            <a href="" onClick={toggleMenu}>
               <AnchorLink className='anchor-link' offset='80' href="#about">
                 <p onClick={()=>setMenu('about')}>About</p>
               </AnchorLink>
@@ -45,7 +45,7 @@ const NavBar = () => {
           </li>
 
           <li>
-            <a href="">
+            <a href="" onClick={toggleMenu}>
               <AnchorLink className='anchor-link' offset='80' href="#portfolio">
                 <p onClick={()=>setMenu('work')}>Portfolio</p>
               </AnchorLink>
@@ -53,18 +53,21 @@ const NavBar = () => {
           </li>
 
           <li>
-            <a href="">
-              <AnchorLink className='anchor-link' offset={50} href="#contact">
+            <a href="" onClick={toggleMenu}>
+              <AnchorLink className='anchor-link' offset='80' href="#contact">
                 <p onClick={()=>setMenu('contact')}>Contact</p></AnchorLink>
             </a>
           </li>
           
           <li>
-            <a href="/CV_TK_DENGE.pdf" download="CV-TK DENGE.pdf">
+            <a href="/CV_TK_DENGE.pdf" download="CV-TK DENGE.pdf" onClick={toggleMenu}>
               <button className='nav-cv-btn'>Download CV</button>
             </a>
           </li>
         </ul>
+
+      <div id="overlay" onClick={toggleMenu}></div>
+
       </div>
     </>
   )

@@ -33,6 +33,10 @@
   transition: 0.5s ease;
 }
 
+.nav-links.active ~ #overlay{
+  display: block;
+}
+
 .nav-links.active a{
   text-decoration: none;
 }
@@ -96,5 +100,14 @@
   z-index: 20;
   transition: 0.5s ease;
 }
+
+#overlay{
+  background: rgb(0, 0, 0, 0.5);
+  position: fixed;
+  inset: 0;
+  z-index: 14;
+  display: none;
+}
+
 
 /* ---------- Responsive Breakpoint ---------- */
