@@ -10,15 +10,20 @@ const Portfolio = () => {
         <div className="portfolio-title">
           <h1>My latest work</h1>
         </div>
+        
         <div className="portfolio-container">
           {projects_data.map((project,index) => {
             return <img key={index} src={project.p_img} alt="" />
           })}
         </div>
-        <div className="portfolio-showmore">
-          <p>Show more</p>
-          <GoArrowRight size={40}/>
+
+        <a href="https://github.com/tkdenge/" target="_blank" rel="noopener noreferrer">
+        <div className="portfolio-showmore">  
+            <p>Show more</p>
+            <GoArrowRight size={40}/>
         </div>
+        </a>
+        
       </div>
     </>
   )
