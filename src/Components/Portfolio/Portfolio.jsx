@@ -2,6 +2,8 @@ import React from 'react'
 import './Portfolio.css'
 import projects_data from '../../assets/projects_data.js'
 import { GoArrowRight } from 'react-icons/go'
+import { DiGithubBadge } from 'react-icons/di'
+import { CgWebsite } from 'react-icons/cg'
 
 const Portfolio = () => {
   return (
@@ -13,7 +15,30 @@ const Portfolio = () => {
         
         <div className="portfolio-container">
           {projects_data.map((project,index) => {
-            return <img key={index} src={project.p_img} alt="" />
+            return <div className='container-content'>
+              <img key={index} src={project.p_img} alt="" />
+              <h2>{project.p_name}</h2>
+              <p>{project.p_des}</p>
+              <div className="content-btns">
+                <div className="view-site-btn">
+                  <CgWebsite size={20}/>
+                  <button 
+                    onClick={() => window.open(`${project.p_site}`, "_blank")}
+                  >
+                    View Site
+                  </button>
+                </div>
+                <div className="view-code-btn">
+                  <DiGithubBadge size={20}/>
+                  <button
+                    onClick={() => window.open(`${project.p_github}`, "_blank")}
+                  >
+                    View Code
+                  </button>
+                </div>
+              </div>
+
+            </div>
           })}
         </div>
 

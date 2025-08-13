@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   gap:25px;
-  padding: 40px;
+  padding: 40px 15px;
 }
 
 .portfolio-title h1{
@@ -20,23 +20,74 @@
   gap: 20px;
 }
 
-.portfolio-container img{
-  box-sizing: border-box;
-  width: 300px;
-  height: 180px;
-  transition: 0.3s;
+.container-content{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
   border-radius: 15px;
-  cursor: pointer;
-  transition: 0.3s ease;
-  border: 1px solid white;
-  padding: 25px;
+  border: 1px solid rgb(78, 78, 78);
+  overflow: hidden;
+  background: rgb(30, 30, 30);
 }
 
-.portfolio-container img:hover{
-  transform: scale(1.05);
-  border: 1px solid rgb(76, 76, 215);
-  border-radius: 15px;
+.portfolio-container img{
+  box-sizing: border-box;
+  width: 100%;
+  height: 180px;
   transition: 0.3s ease;
+}
+
+.container-content img:hover{
+  transform: scale(1.05);
+  border: 1px solid transparent;
+  transition: 0.3s ease;
+}
+
+.container-content:hover{
+  transform: scale(1.05);
+  border: 1px solid rgb(100, 100, 100);
+  transition: 0.3s ease;
+}
+
+.container-content h2{
+  padding: 0px 30px;
+}
+
+.container-content p{
+  padding: 0px 30px;
+  line-height: 1.4rem;
+  font-size: .8rem;
+  font-weight: 300;
+}
+
+.view-code-btn{
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  /* padding: 0px 30px; */
+  gap: 10px;
+  margin-bottom: 30px;
+  border: 1px solid rgb(113, 113, 113);
+  border-radius: 15px;
+  padding: 5px 10px;
+  /* background-color: green; */
+}
+
+.view-code-btn:hover{
+   /* border: 1px solid transparent; */
+   transform: scale(1.07);
+   transition: 0.3s ease;
+   cursor: pointer;
+   border: 1px solid rgb(129, 129, 129);
+}
+
+.view-code-btn button{
+  background: transparent;
+  border: none;
+  color: white;
+  font-weight: 500;
+  font-size: 0.8rem;
+  cursor: pointer;
 }
 
 .portfolio-showmore{
@@ -59,4 +110,41 @@
 .portfolio a{
   text-decoration: none;
   color: white;
+}
+
+.content-btns{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.view-site-btn{
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  /* padding: 0px 30px; */
+  gap: 10px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  border: 1px solid rgb(113, 113, 113);
+  border-radius: 15px;
+  padding: 5px 10px;
+  /* background-color: green; */
+}
+
+.view-site-btn:hover{
+   /* border: 1px solid transparent; */
+   transform: scale(1.07);
+   transition: 0.3s ease;
+   cursor: pointer;
+   border: 1px solid rgb(129, 129, 129);
+}
+
+.view-site-btn button{
+  background: transparent;
+  border: none;
+  color: white;
+  font-weight: 500;
+  font-size: 0.8rem;
+  cursor: pointer;
 }
