@@ -1,4 +1,4 @@
-import project1_img from '../assets/climaview.png'
+import project1_img from '../assets/cloudleaf.png'
 import project2_img from '../assets/coming_soon.png'
 import project3_img from '../assets/coming_soon.png'
 import project4_img from '../assets/coming_soon.png'
@@ -6,9 +6,9 @@ import project4_img from '../assets/coming_soon.png'
 const projects_data = [
     {
         p_no:1,
-        p_name:'ClimaView',
+        p_name:'CloudLeaf',
         p_des:"A weather app built using React.js and OpenWeatherMap",
-        p_site:"https://viewclima.netlify.app/",
+        p_site:"https://cloudleaf.netlify.app/",
         p_github:"https://github.com/tkdenge/climaview",
         p_img:project1_img
     },
