@@ -38,15 +38,16 @@
 }
 
 .container-content img:hover{
-  transform: scale(1.05);
-  border: 1px solid transparent;
   transition: 0.3s ease;
 }
 
 .container-content:hover{
-  transform: scale(1.05);
   border: 1px solid rgb(100, 100, 100);
   transition: 0.3s ease;
+}
+
+.container-content:hover img{
+  transform: scale(1.05);
 }
 
 .container-content h2{

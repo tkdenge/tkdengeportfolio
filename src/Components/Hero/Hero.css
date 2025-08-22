@@ -10,9 +10,9 @@
 }
 
 .hero img{
-  border-radius: 50%;
+  border-radius: 25px;
   width: 200px;
-  box-shadow: 1px 0 10px 0 black;
+  box-shadow: 1px 0 5px 0 black;
 }
 
 .hero h1{
