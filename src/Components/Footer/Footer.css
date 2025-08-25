@@ -121,3 +121,33 @@
   cursor: pointer;
   transition: 0.5s ease;
 }
+
+/* --- --- */
+
+
+@media (min-width:1024px) {
+  .footer{
+    background: rgb(49, 49, 49);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:25px;
+    padding: 40px;
+    margin: 0 auto;
+    margin-bottom: -80px;
+    max-width: 1000px;
+  }
+
+  .footer-top-left p{
+    width: fit-content;
+  }
+
+  .footer-bottom-left p{
+    width: fit-content;
+  }
+}
+
+@media (min-width:1224px) {
+ 
+}

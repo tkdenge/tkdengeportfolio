@@ -110,3 +110,78 @@
 span{
   color: red;
 }
+
+
+
+/* --- --- */
+
+
+@media (min-width:1024px) {
+  .contact{
+     gap:50px;
+  }
+
+  .contact-section{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 50px;
+  }
+
+  .contact-title h1{
+    font-size: 3rem;
+  }
+
+  .contact-left{
+    gap: 25px;
+  }
+
+  .contact-left h1{
+    font-size: 2rem;
+  }
+
+  .contact-left p{
+    font-size: 1.2rem;
+    line-height: 20px;
+  }
+
+  .contact-details{
+    gap: 30px;
+    font-size: 1.2rem;
+  }
+
+  .contact-right{
+    gap: 25px;
+  }
+
+  .contact-right label{
+    font-size: 1.1rem;
+  }
+
+  .contact-right input{
+    font-size: 1.1rem;
+  }
+
+  .contact-right textarea{
+    font-size: 1.1rem;
+  }
+
+  .contact-submit{
+    font-size: 1.2rem;
+  }
+
+}
+
+@media (min-width:1224px) {
+  .contact-title h1{
+    font-size: 4rem;
+  }
+
+  .contact-left{
+    gap: 25px;
+  }
+
+  .contact-left h1{
+    font-size: 2.5rem;
+  }
+}

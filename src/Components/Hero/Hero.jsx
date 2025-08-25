@@ -9,7 +9,7 @@ const Hero = () => {
       <div id='home' className="hero">
         <img src={profile_img} width='200' alt="" />
 
-        <h1><span>Thanyani Katleho Denge</span> is a front-end developer and UX/UI designer </h1>
+        <h1><span>Thanyani Katleho Denge</span> is a front-end developer and UI/UX designer </h1>
 
         <p>I create and code elegant, minimal designs, and I truly enjoy the process.</p>
 

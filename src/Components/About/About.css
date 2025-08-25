@@ -26,6 +26,7 @@
   font-size: 1rem;
   line-height: 20px;
   gap: 20px;
+  max-width: 1000px;
 }
 
 .about-top hr{
@@ -70,4 +71,67 @@
   margin-top: 5px;
   font-size: 1rem;
   text-align: center;
+}
+
+
+
+/* --- --- */
+
+
+@media (min-width:1024px) {
+  .about{
+     gap:50px;
+  }
+  .skills-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  .about-title h1{
+    font-size: 3rem;
+  }
+
+  .about-top{
+    font-size: 1.2rem;
+    line-height: 30px;
+     gap:50px;
+  }
+
+  .about-bottom h1{
+    font-size: 3rem;
+  }
+
+  .skills-format h3{
+    font-size: 1.1rem;
+  }
+  .about-bottom{
+    gap: 20px;
+  }
+
+}
+
+@media (min-width:1224px) {
+ .skills-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  .about-title h1{
+    font-size: 4rem;
+  }
+
+  .about-top{
+    font-size: 1.4rem;
+    line-height: 35px;
+  }
+
+  .about-bottom h1{
+    font-size: 4rem;
+  }
+
+  .skills-format h3{
+    font-size: 1.2rem;
+  }
 }

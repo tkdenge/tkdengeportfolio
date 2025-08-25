@@ -1,76 +1,69 @@
-import {useState} from 'react'
-import './Navbar.css'
-import {Menu, X} from 'lucide-react'
-
-import AnchorLink from 'react-anchor-link-smooth-scroll'
+import { useState } from "react";
+import "./Navbar.css";
+import { Menu, X } from "lucide-react";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const NavBar = () => {
-
-  const [menu,setMenu] = useState('home');
-
+  const [menu, setMenu] = useState("home");
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const toggleMenu = () => setMenuOpen(prev => !prev);
+  const toggleMenu = () => setMenuOpen((prev) => !prev);
+  const closeMenu = () => setMenuOpen(false);
 
   return (
-    <>
-      <div className="navbar">
-        <div class="nav-logo">
-          <a href="">
-              <AnchorLink className='anchor-link' offset='80' href="#home">
-                <p onClick={()=>setMenu('home')}>DENGE</p>
-              </AnchorLink>
-          </a>
-        </div>
-
-        <div className="menu-icon" onClick={toggleMenu}>
-          {menuOpen ? <X size={40} /> : <Menu size={40} />}
-        </div>
-
-        <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
-          <li>
-            <a href="" onClick={toggleMenu}>
-              <AnchorLink className='anchor-link' offset='80' href="#home">
-                <p onClick={()=>setMenu('home')}>Home</p>
-              </AnchorLink>
-            </a> 
-          </li>
-
-          <li>
-            <a href="" onClick={toggleMenu}>
-              <AnchorLink className='anchor-link' offset='80' href="#about">
-                <p onClick={()=>setMenu('about')}>About</p>
-              </AnchorLink>
-            </a>
-          </li>
-
-          <li>
-            <a href="" onClick={toggleMenu}>
-              <AnchorLink className='anchor-link' offset='80' href="#portfolio">
-                <p onClick={()=>setMenu('work')}>Portfolio</p>
-              </AnchorLink>
-            </a>
-          </li>
-
-          <li>
-            <a href="" onClick={toggleMenu}>
-              <AnchorLink className='anchor-link' offset='80' href="#contact">
-                <p onClick={()=>setMenu('contact')}>Contact</p></AnchorLink>
-            </a>
-          </li>
-          
-          <li>
-            <a href="/CV_TK_DENGE.pdf" download="CV-TK DENGE.pdf" onClick={toggleMenu}>
-              <button className='nav-cv-btn'>Download CV</button>
-            </a>
-          </li>
-        </ul>
-
-      <div id="overlay" onClick={toggleMenu}></div>
-
+    <nav className="navbar">
+      {/* Logo */}
+      <div className="nav-logo">
+        <AnchorLink
+          className="anchor-link"
+          offset="80"
+          href="#home"
+          onClick={() => setMenu("home")}
+        >
+          DENGE
+        </AnchorLink>
       </div>
-    </>
-  )
-}
 
-export default NavBar
+      {/* Hamburger Icon */}
+      <div className="menu-icon" onClick={toggleMenu}>
+        {menuOpen ? <X size={32} /> : <Menu size={32} />}
+      </div>
+
+      {/* Nav Links */}
+      <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
+        {[
+          { id: "home", label: "Home" },
+          { id: "about", label: "About" },
+          { id: "portfolio", label: "Portfolio" },
+          { id: "contact", label: "Contact" },
+        ].map((item) => (
+          <li key={item.id}>
+            <AnchorLink
+              className={`anchor-link ${menu === item.id ? "active" : ""}`}
+              offset="80"
+              href={`#${item.id}`}
+              onClick={() => {
+                setMenu(item.id);
+                closeMenu();
+              }}
+            >
+              {item.label}
+            </AnchorLink>
+          </li>
+        ))}
+
+        {/* CV Button */}
+        <li>
+          <a href="/CV_TK_DENGE.pdf" download="CV-TK DENGE.pdf" onClick={closeMenu}>
+            <button className="nav-cv-btn">Download CV</button>
+          </a>
+        </li>
+      </ul>
+
+      {/* Overlay for mobile */}
+      {menuOpen && <div id="overlay" onClick={closeMenu}></div>}
+    </nav>
+  );
+};
+
+export default NavBar;
