@@ -1,22 +1,29 @@
-# Weather App
+# 🌐 My Web Portfolio
 
-A simple, responsive weather application built with **React** that displays current weather and a 5-day forecast. Users can search for a city or use their current location to get weather information.
+A personal portfolio website built with **React** .  
+It showcases my projects and skills as a developer.
 
----
-
-## Features
-
-- Search for weather by **city name**
-- Display **current weather**: temperature, description, icon, humidity, wind
-- **5-day forecast** with min/max temperatures and daily weather icons
-- Option to use **current location** for weather data
-- Responsive layout, works on desktop and mobile
-- Default city is shown if location is not granted
-- Styled with **Vanilla CSS**
+🔗 **Live Demo:** https://tkdenge.netlify.app/  
 
 ---
 
-## Screenshots
+## 🚀 Features
 
+- 🖥️ **Responsive Design** – works across desktop, tablet, and mobile.  
+- 🎨 **Modern UI/UX** – clean and minimal design.  
+- 📂 **Projects Showcase** – highlights my apps.  
+- 📝 **About Me** – background, skills.  
+- 📬 **Contact Form** – allows users to reach me directly.  
 
-![Current Weather](./src/assets/cloudleaf.png)  
+---
+
+## 🛠️ Tech Stack
+
+**Frontend:**
+- React (Vite or CRA)
+- React Icons / Lucide React
+
+**Deployment:**
+- Netlify (frontend)
+
+---
