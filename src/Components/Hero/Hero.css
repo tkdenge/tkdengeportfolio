@@ -51,13 +51,17 @@
   transition: 0.5s ease;
 }
 
+.hero-connect .anchor-link-contact{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
 .hero-resume{
   padding: 8px 20px;
   border-radius: 15px;
   border: 1px solid white;
   cursor: pointer;
   transition: 0.5s ease;
-  border-color: rgb(255, 255, 255);
 }
 
 .hero-resume a{
@@ -67,11 +71,12 @@
 
 .hero-connect:hover {
   border-color: white;
+  color: blue;
   transform: scale(1.05);
 }
 
 .hero-resume:hover {
-  border-color: rgb(76, 76, 215);
+  border-color: rgb(207, 108, 3);
   transform: scale(1.05);
 }
 

@@ -16,7 +16,7 @@ const About = () => {
         <div className="about-sections">
           <div className="about-top">
             <div className="about-para">
-              <p>I'm a final-year Computer Science student with a passion for building front-end web applications. I enjoy turning ideas into clean, functional code. I'm currently sharpening my skills and building real-world projects to launch my career as a front-end developer. I'm always exploring new technologies that help me create better, faster, and more scalable applications. Whether it's crafting intuitive user interfaces or writing efficient APIs, I love the problem-solving process that development brings.</p>
+              <p>I am a Computer Science graduate (awaiting final completion letter, graduation expected April 2026) with practical experience in web and software development, demonstrated through personally built and maintained websites and projects. Committed to developing user-friendly solutions and bringing technical skills and fresh perspectives to a digital-focused environment.</p>
             </div>
             <hr />
           </div>
