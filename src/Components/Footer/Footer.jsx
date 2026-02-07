@@ -52,7 +52,7 @@ const Footer = () => {
                 <FiMail size={35} color="#9b9ea0ff" />
               </a>
             </div>
-            <p>© 2025 Thanyani Katleho Denge.</p>
+            <p>© 2026 Thanyani Katleho Denge.</p>
           </div>
           
           <div className="footer-bottom-right">
