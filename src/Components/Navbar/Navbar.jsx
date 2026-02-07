@@ -54,7 +54,7 @@ const NavBar = () => {
 
         {/* CV Button */}
         <li>
-          <a href="/CV_TK_DENGE.pdf" download="CV-TK DENGE.pdf" onClick={closeMenu}>
+          <a href="/CV - TK Denge.pdf" download="CV - TK Denge.pdf" onClick={closeMenu}>
             <button className="nav-cv-btn">Download CV</button>
           </a>
         </li>
