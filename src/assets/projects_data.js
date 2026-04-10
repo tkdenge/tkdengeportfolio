@@ -1,5 +1,5 @@
 import project1_img from '../assets/cloudleaf.png'
-import project2_img from '../assets/coming_soon.png'
+import project2_img from '../assets/applyhire-dashboard-page.png'
 import project3_img from '../assets/coming_soon.png'
 import project4_img from '../assets/coming_soon.png'
 
@@ -14,10 +14,10 @@ const projects_data = [
     },
     {
         p_no:2,
-        p_name:'Proj 2',
-        p_des:"...",
-        p_site:"#",
-        p_github:"#",
+        p_name:'ApplyHire',
+        p_des:"Job tracking application that helps users manage and monitor their job applications in one place.",
+        p_site:"https://applyhire.onrender.com/",
+        p_github:"https://github.com/tkdenge/applyhire",
         p_img:project2_img
     },
     {

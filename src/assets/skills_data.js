@@ -1,6 +1,6 @@
 import { BiLogoCPlusPlus } from "react-icons/bi";
-import { DiHtml5, DiCss3, DiReact, DiGit, DiVisualstudio, DiResponsive, DiChrome, DiJavascript1, DiPython, DiMysql, DiNodejs, DiGithubBadge } from "react-icons/di";
-import { SiVite } from "react-icons/si";
+import { DiHtml5, DiCss3, DiReact, DiGit, DiVisualstudio, DiResponsive, DiChrome, DiJavascript1, DiPython, DiMysql, DiNodejs, DiGithubBadge, DiMongodb } from "react-icons/di";
+import { SiExpress, SiVite } from "react-icons/si";
 
 const Skills_Data = [
     { 
@@ -73,6 +73,16 @@ const Skills_Data = [
         id: 14, 
         name: "MySQL",
         icon: DiMysql,
+    },
+    { 
+        id: 15, 
+        name: "MongoDB",
+        icon: DiMongodb,
+    },
+    { 
+        id: 16, 
+        name: "Express JS",
+        icon: SiExpress,
     },
 ]
 
