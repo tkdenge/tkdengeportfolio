@@ -154,6 +154,14 @@
 
 /* --- --- */
 
+@media (min-width:768px) {
+  .portfolio-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
+  }
+}
 
 @media (min-width:1024px) {
   .portfolio{

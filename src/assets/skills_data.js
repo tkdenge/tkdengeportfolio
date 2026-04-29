@@ -1,6 +1,6 @@
 import { BiLogoCPlusPlus } from "react-icons/bi";
 import { DiHtml5, DiCss3, DiReact, DiGit, DiVisualstudio, DiResponsive, DiChrome, DiJavascript1, DiPython, DiMysql, DiNodejs, DiGithubBadge, DiMongodb } from "react-icons/di";
-import { SiExpress, SiVite } from "react-icons/si";
+import { SiAxios, SiExpress, SiGithubactions, SiJest, SiJsonwebtokens, SiPostman} from "react-icons/si";
 
 const Skills_Data = [
     { 
@@ -20,70 +20,90 @@ const Skills_Data = [
     },
     { 
         id: 4, 
-        name: "React JS",
-        icon: DiReact,
-    },
-    { 
-        id: 5, 
-        name: "Vite",
-        icon: SiVite,
-    },
-    { 
-        id: 6, 
-        name: "Git",
-        icon: DiGit,
-    },
-    { 
-        id: 7, 
-        name: "GitHub",
-        icon: DiGithubBadge,
-    },
-    { 
-        id: 8, 
-        name: "Responsive Design",
-        icon: DiResponsive,
-    },
-    { 
-        id: 9, 
-        name: "Dev Tools",
-        icon: DiChrome,
-    },
-    { 
-        id: 10, 
-        name: "VS Code",
-        icon: DiVisualstudio,
-    },
-    { 
-        id: 11, 
         name: "C++",
         icon: BiLogoCPlusPlus,
     },
-    
     { 
-        id: 12, 
+        id: 5, 
         name: "Python",
         icon: DiPython,
     },
     { 
-        id: 13, 
+        id: 6, 
+        name: "React JS",
+        icon: DiReact,
+    },
+    { 
+        id: 7, 
         name: "Node JS",
         icon: DiNodejs,
     },
     { 
-        id: 14, 
-        name: "MySQL",
-        icon: DiMysql,
+        id: 8, 
+        name: "Express JS",
+        icon: SiExpress,
+    
     },
     { 
-        id: 15, 
+        id: 9, 
+        name: "Axios",
+        icon: SiAxios,
+    },
+    { 
+        id: 10, 
+        name: "JWT",
+        icon: SiJsonwebtokens,
+    },
+    { 
+        id: 11, 
+        name: "Responsive Design",
+        icon: DiResponsive,
+    },
+    { 
+        id: 12, 
         name: "MongoDB",
         icon: DiMongodb,
     },
     { 
-        id: 16, 
-        name: "Express JS",
-        icon: SiExpress,
+        id: 13, 
+        name: "MySQL",
+        icon: DiMysql,
     },
+    { 
+        id: 14, 
+        name: "Jest",
+        icon: SiJest,
+    },
+    { 
+        id: 15, 
+        name: "CI/CD",
+        icon: SiGithubactions,
+    },
+    { 
+        id: 16, 
+        name: "Git",
+        icon: DiGit,
+    },
+    { 
+        id: 17, 
+        name: "GitHub",
+        icon: DiGithubBadge,
+    },
+    { 
+        id: 18, 
+        name: "Dev Tools",
+        icon: DiChrome,
+    },
+    { 
+        id: 19, 
+        name: "Visual Studio",
+        icon: DiVisualstudio,
+    },
+    { 
+        id: 20, 
+        name: "Postman",
+        icon: SiPostman,
+    } 
 ]
 
 export default Skills_Data;
