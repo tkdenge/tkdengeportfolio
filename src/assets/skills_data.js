@@ -1,6 +1,8 @@
 import { BiLogoCPlusPlus } from "react-icons/bi";
 import { DiHtml5, DiCss3, DiReact, DiGit, DiVisualstudio, DiResponsive, DiChrome, DiJavascript1, DiPython, DiMysql, DiNodejs, DiGithubBadge, DiMongodb } from "react-icons/di";
-import { SiAxios, SiExpress, SiGithubactions, SiJest, SiJsonwebtokens, SiPostman} from "react-icons/si";
+import { RiNextjsLine } from "react-icons/ri";
+import { SiAxios, SiExpress, SiGithubactions, SiJest, SiJsonwebtokens, SiNextdotjs, SiPostman} from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
 
 const Skills_Data = [
     { 
@@ -103,6 +105,11 @@ const Skills_Data = [
         id: 20, 
         name: "Postman",
         icon: SiPostman,
+    }, 
+    { 
+        id: 21, 
+        name: "Next JS",
+        icon: RiNextjsLine,
     } 
 ]
 
